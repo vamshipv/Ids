@@ -1,0 +1,52 @@
+//plugins {
+//    id 'java-library'
+//    id 'com.google.protobuf' version '0.9.2'
+//}
+//
+//sourceCompatibility = 17
+//
+//repositories {
+//    mavenCentral()
+//}
+//
+//dependencies {
+//    // AMQP
+//    implementation 'com.rabbitmq:amqp-client:5.17.0'
+//    implementation 'org.apache.commons:commons-lang3:3.12.0'
+//    // JAX-RS
+//    implementation 'jakarta.xml.bind:jakarta.xml.bind-api:4.0.0'
+//    runtimeOnly 'io.grpc:grpc-netty-shaded:1.54.1'
+//    implementation 'io.grpc:grpc-protobuf:1.54.1'
+//    implementation 'io.grpc:grpc-stub:1.54.1'
+//    compileOnly 'org.apache.tomcat:annotations-api:6.0.53' // necessary for Java 9+
+//
+//    // gRPC
+//    implementation 'com.google.protobuf:protobuf-java-util:3.21.7'
+//    implementation 'org.apache.commons:commons-lang3:3.0'
+//}
+//
+//sourceSets {
+//    main {
+//        java {
+//            srcDirs 'build/generated/source/proto/main/grpc'
+//            srcDirs 'build/generated/source/proto/main/java'
+//        }
+//    }
+//}
+//
+//protobuf {
+//    protoc {
+//        artifact = "com.google.protobuf:protoc:3.21.7"
+//    }
+//    plugins {
+//        grpc {
+//            artifact = 'io.grpc:protoc-gen-grpc-java:1.54.1'
+//        }
+//    }
+//    generateProtoTasks {
+//        all()*.plugins {
+//            grpc {}
+//        }
+//    }
+//}
+
